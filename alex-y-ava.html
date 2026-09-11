@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex y Ava — Ramz Rammy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#f3ecd9; --ink-dim:#c9bfae;
+    --void:#07050c; --void-2:#0c0916;
+    --violet:#6d3fc9; --gold:#d9a955; --gold-bright:#f0c878;
+    --line: rgba(217,169,85,0.25);
+    --serif-display: 'Cinzel', serif;
+    --serif-body: 'Cormorant Garamond', 'EB Garamond', serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{ background:var(--void); color:var(--ink); font-family:var(--serif-body); }
+  body::before{
+    content:''; position:fixed; inset:0; z-index:-1;
+    background:
+      radial-gradient(ellipse at 20% -10%, rgba(109,63,201,0.18), transparent 55%),
+      radial-gradient(ellipse at 90% 10%, rgba(217,169,85,0.10), transparent 50%),
+      var(--void);
+  }
+  nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:26px 6vw; border-bottom:1px solid var(--line);
+  }
+  .nav-mark{
+    font-family:var(--serif-display); letter-spacing:0.18em; font-size:0.94rem;
+    color:var(--gold-bright); text-decoration:none; display:flex; align-items:center; gap:10px;
+  }
+  .nav-mark svg{width:20px;height:20px;}
+  .back-link{
+    font-family:var(--serif-display); font-size:0.80rem; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--ink-dim); text-decoration:none;
+    transition:color .3s ease;
+  }
+  .back-link:hover{ color:var(--gold-bright); }
+
+  main{
+    max-width:1100px; margin:0 auto; padding:70px 6vw 120px;
+    display:grid; grid-template-columns:340px 1fr; gap:70px;
+  }
+  .cover-col{ position:sticky; top:100px; align-self:start; }
+  .cover-col img{
+    width:100%; border-radius:4px; border:1px solid var(--line);
+    box-shadow:0 30px 70px rgba(0,0,0,0.6), 0 0 60px rgba(109,63,201,0.15);
+  }
+  .b2r-btn{
+    display:block; margin-top:26px; text-decoration:none; border-radius:2px;
+    overflow:hidden; transition:all .3s ease;
+    box-shadow:0 8px 22px rgba(0,0,0,0.28);
+  }
+  .b2r-btn img{
+    width:100%; height:auto; display:block;
+  }
+  .b2r-btn:hover{ transform:translateY(-2px); box-shadow:0 14px 30px rgba(0,0,0,0.42); }
+
+  .amazon-btn{
+    display:flex; align-items:center; justify-content:center; width:100%;
+    aspect-ratio:712 / 150; margin-top:16px; border:1px solid rgba(217,169,85,0.55);
+    border-radius:4px; background:#070707; text-decoration:none;
+    box-shadow:0 8px 22px rgba(0,0,0,0.28); transition:all .3s ease;
+  }
+  .amazon-btn:hover{ border-color:var(--gold); transform:translateY(-2px); }
+  .amazon-btn .az{ font-family:Arial, sans-serif; font-weight:700; font-size:1.5rem; color:#fff; }
+  .amazon-btn .kd{ font-family:Arial, sans-serif; font-weight:700; font-size:1.5rem; color:#ff9900; margin-left:2px; }
+
+  .content-col{ padding-top:8px; }
+  .eyebrow{
+    font-family:var(--serif-display); font-size:0.91rem; letter-spacing:0.3em;
+    text-transform:uppercase; color:var(--gold); margin-bottom:14px; display:block;
+  }
+  h1{
+    font-family:var(--serif-display); font-weight:600;
+    font-size:clamp(1.86rem, 3.4vw, 2.66rem); line-height:1.2; color:var(--ink);
+  }
+  .subtitle{
+    font-family:var(--serif-body); font-style:italic; color:var(--gold-bright);
+    font-size:1.49rem; margin-top:10px;
+  }
+  .divider{
+    width:90px; height:1px; margin:30px 0;
+    background:linear-gradient(90deg, var(--gold), transparent);
+  }
+  .synopsis p{
+    font-size:1.24rem; line-height:1.75; color:var(--ink-dim); margin-bottom:20px;
+  }
+  .synopsis p:first-of-type::first-letter{
+    font-family:var(--serif-display); font-size:3.2rem; color:var(--gold-bright);
+    float:left; line-height:0.8; padding-right:10px; padding-top:6px;
+  }
+
+  footer{
+    padding:40px 6vw; text-align:center; border-top:1px solid var(--line);
+    color:var(--ink-dim); font-size:0.98rem; font-style:italic; opacity:0.7;
+  }
+
+  @media (max-width:760px){
+    main{ grid-template-columns:1fr; gap:40px; }
+    .cover-col{ position:static; max-width:280px; margin:0 auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-mark">
+    <svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 20 L20 36 L4 20 Z" stroke="#d9a955" stroke-width="1.4"/></svg>
+    RAMZ&nbsp;RAMMY
+  </a>
+  <a href="index.html#historias" class="back-link">&larr; Volver a Historias</a>
+</nav>
+
+<main>
+  <div class="cover-col">
+    <img src="alex-y-ava-cover.jpg" alt="Alex y Ava — portada">
+    <a href="https://books2read.com/u/3JzKzA" class="b2r-btn" target="_blank" rel="noopener"><img src="b2r.png" alt="Books2Read — Comprar / Leer"></a>
+    <a href="https://www.amazon.com/dp/B0HJBS5NV1?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.2KiFPF2OqT9Sp7ITrkpyZE-XsFleEwybaJm33rwuM7tAmVjZndEqk6wEMtTgSowUeLWC8UZgHv_pTroCkJQz6SIo6I1hpsObFDnQll-FcKg.BGCLeJitqnvXFE1-0DOs9Q2UGaTtwHv2IC5O9lAI_nI&dib_tag=AUTHOR&language=es_US" class="amazon-btn" target="_blank" rel="noopener">
+      <span class="az">amazon</span><span class="kd">kindle</span>
+    </a>
+  </div>
+  <div class="content-col">
+    <span class="eyebrow">Romance contemporáneo</span>
+    <h1>Alex y Ava</h1>
+    <p class="subtitle">¿Qué pasaría si fuera amor?</p>
+    <div class="divider"></div>
+    <div class="synopsis">
+      <p>Ella lo tenía todo&hellip; hasta que el silencio se convirtió en su único refugio.</p>
+      <p>Ava Lane, de 25 años, es la voz que el mundo entero corea, la rubia perfecta de portadas y escenarios. Pero tras la traición de quienes debían protegerla, decide huir. Sin maletas y sin planes, cargando solo con el eco de una fama que se siente como una condena, encuentra refugio en un rincón olvidado de Portugal, donde el Atlántico ruge con la misma furia que su interior.</p>
+      <p>Él no buscaba a nadie&hellip; porque sentía que ya lo había perdido todo. Alexander Stone, de 35 años, llegó a Portugal para restaurar un faro abandonado. Es un hombre de manos curtidas y pocas palabras que solo confía en su rutina y en la lealtad de su perra, Maya. En su vida no hay espacio para el glamour ni para héroes; solo hay trabajo, aislamiento y el viento golpeando contra los acantilados.</p>
+      <p>Un encuentro que no debía suceder. Cuando el mundo de cristal de Ava choca contra la roca sólida que es Alex, surgen chispas, pero no de romance&hellip; sino de resistencia. Él no sabe quién es ella, y a ella no le importa quién es él. Sin embargo, entre las paredes del faro, donde las máscaras caen y el pasado golpea como las olas, una pregunta empieza a cobrar fuerza:</p>
+      <p>&ldquo;¿Qué pasaría si, entre el deseo, los falsos estereotipos y los prejuicios, también existiera algo más?&rdquo;</p>
+    </div>
+  </div>
+</main>
+
+<footer>&copy; Ramz Rammy &middot; Todos los mundos, todas las historias. &middot; Todos los derechos reservados</footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Amigos No Se Enamoran — Ramz Rammy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#f3ecd9; --ink-dim:#c9bfae;
+    --void:#07050c; --void-2:#0c0916;
+    --violet:#6d3fc9; --gold:#d9a955; --gold-bright:#f0c878;
+    --line: rgba(217,169,85,0.25);
+    --serif-display: 'Cinzel', serif;
+    --serif-body: 'Cormorant Garamond', 'EB Garamond', serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{ background:var(--void); color:var(--ink); font-family:var(--serif-body); }
+  body::before{
+    content:''; position:fixed; inset:0; z-index:-1;
+    background:
+      radial-gradient(ellipse at 20% -10%, rgba(109,63,201,0.18), transparent 55%),
+      radial-gradient(ellipse at 90% 10%, rgba(217,169,85,0.10), transparent 50%),
+      var(--void);
+  }
+  nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:26px 6vw; border-bottom:1px solid var(--line);
+  }
+  .nav-mark{
+    font-family:var(--serif-display); letter-spacing:0.18em; font-size:0.94rem;
+    color:var(--gold-bright); text-decoration:none; display:flex; align-items:center; gap:10px;
+  }
+  .nav-mark svg{width:20px;height:20px;}
+  .back-link{
+    font-family:var(--serif-display); font-size:0.80rem; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--ink-dim); text-decoration:none;
+    transition:color .3s ease;
+  }
+  .back-link:hover{ color:var(--gold-bright); }
+
+  main{
+    max-width:1100px; margin:0 auto; padding:70px 6vw 120px;
+    display:grid; grid-template-columns:340px 1fr; gap:70px;
+  }
+  .cover-col{ position:sticky; top:100px; align-self:start; }
+  .cover-col img{
+    width:100%; border-radius:4px; border:1px solid var(--line);
+    box-shadow:0 30px 70px rgba(0,0,0,0.6), 0 0 60px rgba(109,63,201,0.15);
+  }
+  .b2r-btn{
+    display:block; margin-top:26px; text-decoration:none; border-radius:2px;
+    overflow:hidden; transition:all .3s ease;
+    box-shadow:0 8px 22px rgba(0,0,0,0.28);
+  }
+  .b2r-btn img{
+    width:100%; height:auto; display:block;
+  }
+  .b2r-btn:hover{ transform:translateY(-2px); box-shadow:0 14px 30px rgba(0,0,0,0.42); }
+
+  .content-col{ padding-top:8px; }
+  .eyebrow{
+    font-family:var(--serif-display); font-size:0.91rem; letter-spacing:0.3em;
+    text-transform:uppercase; color:var(--gold); margin-bottom:14px; display:block;
+  }
+  h1{
+    font-family:var(--serif-display); font-weight:600;
+    font-size:clamp(1.86rem, 3.4vw, 2.66rem); line-height:1.2; color:var(--ink);
+  }
+  .subtitle{
+    font-family:var(--serif-body); font-style:italic; color:var(--gold-bright);
+    font-size:1.49rem; margin-top:10px;
+  }
+  .divider{
+    width:90px; height:1px; margin:30px 0;
+    background:linear-gradient(90deg, var(--gold), transparent);
+  }
+  .synopsis p{
+    font-size:1.24rem; line-height:1.75; color:var(--ink-dim); margin-bottom:20px;
+  }
+  .synopsis p:first-of-type::first-letter{
+    font-family:var(--serif-display); font-size:3.2rem; color:var(--gold-bright);
+    float:left; line-height:0.8; padding-right:10px; padding-top:6px;
+  }
+
+  footer{
+    padding:40px 6vw; text-align:center; border-top:1px solid var(--line);
+    color:var(--ink-dim); font-size:0.98rem; font-style:italic; opacity:0.7;
+  }
+
+  @media (max-width:760px){
+    main{ grid-template-columns:1fr; gap:40px; }
+    .cover-col{ position:static; max-width:280px; margin:0 auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-mark">
+    <svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 20 L20 36 L4 20 Z" stroke="#d9a955" stroke-width="1.4"/></svg>
+    RAMZ&nbsp;RAMMY
+  </a>
+  <a href="index.html#historias" class="back-link">&larr; Volver a Historias</a>
+</nav>
+
+<main>
+  <div class="cover-col">
+    <img src="amigos-cover.jpg" alt="Los Amigos No Se Enamoran — portada">
+    <a href="https://books2read.com/u/4AEOxk" class="b2r-btn" target="_blank" rel="noopener"><img src="b2r.png" alt="Books2Read — Comprar / Leer"></a>
+  </div>
+  <div class="content-col">
+    <span class="eyebrow">Romance contemporáneo</span>
+    <h1>Los Amigos No Se Enamoran</h1>
+    
+    <div class="divider"></div>
+    <div class="synopsis">
+      <p><strong>Michael Davis</strong><br>Él cree que lo tiene todo: popularidad, un futuro brillante en el básquetbol y una vida que él cree perfectamente definida mientras asiste a la universidad. Pero todo su control se desmorona el día en que ella entra a su clase.</p>
+      <p><strong>Ericka Young</strong><br>Rubia, hermosa, con unos ojos grises tan profundos que parecen guardar los secretos de otra vida. Su presencia despierta algo que Michael creía enterrado hace años: un recuerdo borroso, una sensación inquietante&hellip; y una historia que no encaja.</p>
+      <p>Porque, siete años atrás, conoció a alguien con un nombre similar y ese mismo apellido. Alguien que no se parece en nada a la chica que ahora lo observa como si ya lo conociera.</p>
+      <p>A medida que el pasado comienza a filtrarse en el presente, Michael se ve arrastrado a una verdad que desafía todo lo que creía recordar. ¿Es posible que un amigo del pasado vuelva de una forma completamente diferente y que además te atraiga de una manera que tú no creías posible?</p>
+      <p>Entre secretos, recuerdos y emociones que nunca desaparecieron del todo, Michael tendrá que enfrentarse a una pregunta que lo cambiará todo:</p>
+      <p>¿Está listo para descubrir quién es realmente Ericka Young&hellip; y qué significa para él?</p>
+    </div>
+  </div>
+</main>
+
+<footer>&copy; Ramz Rammy &middot; Todos los mundos, todas las historias. &middot; Todos los derechos reservados</footer>
+
+</body>
+</html>
